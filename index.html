@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    </head>
+    <script>
+        $.ajax({
+            method: 'get',
+            // method: 'post',
+            headers: {
+                // token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiMjIxMDEvanFfMjAyMlVwKzYzMzAzMWJjOTA1YWY3NDBjYzNmM2ZlZCIsImlhdCI6MTY2NDExMzU1MH0.nAAuPvFKnth3W5sFJo_kyor8UIitHcJafoOgAF82dV2-y16yv2b75lDuBoTbf-Caa8OrhXoiRn7f7svxk78VDex088kZJCPgp0NSQtJFBPxQkoD1H8AQOTDdK1EE-_y9fqWYKj6dV6RBtRZBjPbybRFZynNTmim20Ksrf3lds-4',
+                token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoibTIyMTAwMy9qcV8yMDIyVXArNjMyYzBhODc1ZDdjNWMyNjc4NGIyYTAzIiwiaWF0IjoxNjY0MTIxODg0fQ.eg33cf40WOhHlWBs8WZbkH5BNofAlwaMSORn8Q0dns7rDTmPBPDlKhQrPCSieuwx8yy7O8v2EvTiBpx0TITGupbgh2X0qt5UkNn8nmmBAxPrdnWPvAJeOpxMr8LM6Pcs2mzdB8KAwIi77J2gzX1-_942lbsVpZ_Mu2p_GfMAmA0',
+            },
+            data: {
+                m_id: 'm221003',
+                orders: [
+                    {
+                        class_id: '5',
+                        c_id: '22',
+                        count: 1,
+                    },
+                ],
+            },
+            url: 'http://127.0.0.1:4000/order/merchant',
+            // url: 'http://127.0.0.1:4000/order',
+        });
+
+        // $.ajax({
+        //     method: 'get',
+        //     headers: {
+        //         token: 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoibTIyMTAwMy9qcV8yMDIyVXArNjMyYzBhODc1ZDdjNWMyNjc4NGIyYTAzIiwiaWF0IjoxNjY0MTIxODg0fQ.eg33cf40WOhHlWBs8WZbkH5BNofAlwaMSORn8Q0dns7rDTmPBPDlKhQrPCSieuwx8yy7O8v2EvTiBpx0TITGupbgh2X0qt5UkNn8nmmBAxPrdnWPvAJeOpxMr8LM6Pcs2mzdB8KAwIi77J2gzX1-_942lbsVpZ_Mu2p_GfMAmA0',
+        //     },
+        //     data: {
+        //         code: '6907376500056',
+        //     },
+        //     url: 'http://127.0.0.1:4000/barcode',
+        // });
+    </script>
+</html>
